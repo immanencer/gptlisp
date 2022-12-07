@@ -19,7 +19,7 @@ jobs:
       with:
         name: test-results
         path: test-results/*
-    - uses: actions/create-status@v1
+    - uses: actions/create-status
       with:
         context: test-results
         state: ${{ job.status }}
