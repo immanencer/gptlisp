@@ -1,3 +1,13 @@
+var reporters = require('jasmine-reporters');
+
+var junitReporter = new reporters.JUnitXmlReporter({
+  savePath: './test-results',
+  filePrefix: 'result',
+  consolidateAll: true
+});
+
+jasmine.getEnv().addReporter(junitReporter);
+
 const { add, subtract, multiply, divide } = require('../operators');
 const interpretLisp = require('../interpreter.js');
 

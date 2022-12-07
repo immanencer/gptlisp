@@ -9,14 +9,5 @@
   "env": {
     "stopSpecOnExpectationFailure": false,
     "random": true
-  },
-  "reporters": [
-    "default",
-    {
-      "name": "junit",
-      "savePath": "./test-results/",
-      "filePrefix": "results",
-      "consolidateAll": true
-    }
-  ]
+  }
 }
