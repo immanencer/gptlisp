@@ -9,7 +9,6 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "jasmine": "^4.5.0",
-    "jasmine-reporters": "^2.5.2"
+    "jasmine": "^4.5.0"
   }
 }
