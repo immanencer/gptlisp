@@ -19,3 +19,9 @@ jobs:
       with:
         name: test-results
         path: test-results/*
+    - uses: actions/create-status@v1
+      with:
+        context: test-results
+        state: ${{ job.status }}
+        description: Test results
+        target_url: ${{ steps.upload.outputs.url }}
